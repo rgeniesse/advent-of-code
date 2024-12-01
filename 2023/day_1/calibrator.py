@@ -1,7 +1,7 @@
 with open('2023/day_1/input.txt', 'r') as file:
     final_result = 0
     for word in file:
-        # Set first in, last int and result back to 0 for the next word.
+        # Set first int, last int and result back to 0 for the next word.
         firstint = 0
         lastint = 0
         result = 0
