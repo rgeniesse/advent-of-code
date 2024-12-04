@@ -1,6 +1,5 @@
-
 def main():
-    with open('2024/day_1/input.txt', 'r') as file:
+    with open("2024/day_1/input.txt", "r") as file:
         total_distance = 0
         list_1 = []
         list_2 = []
@@ -17,7 +16,7 @@ def main():
             i += 1
             total_distance = difference + total_distance
 
-        print (f"The total distance is: {total_distance}")
+        print(f"The total distance is: {total_distance}")
 
         sim_score = 0
         for element_1 in list_1:
@@ -27,7 +26,8 @@ def main():
                     similarity_mul += 1
             current_sim_score = int(element_1) * int(similarity_mul)
             sim_score += current_sim_score
-        print (f"The similarity score is: {sim_score}")
-        
+        print(f"The similarity score is: {sim_score}")
+
+
 if __name__ == "__main__":
     main()

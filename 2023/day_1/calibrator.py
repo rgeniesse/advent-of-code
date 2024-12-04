@@ -1,4 +1,4 @@
-with open('2023/day_1/input.txt', 'r') as file:
+with open("2023/day_1/input.txt", "r") as file:
     final_result = 0
     for word in file:
         # Set first int, last int and result back to 0 for the next word.
@@ -12,6 +12,6 @@ with open('2023/day_1/input.txt', 'r') as file:
             elif char.isdigit() and firstint != 0:
                 lastint = char
         result = str(firstint) + str(lastint)
-        print (result)
+        print(result)
         final_result = final_result + int(result)
-    print (final_result)
+    print(final_result)
